@@ -1,34 +1,38 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import AirplanemodeInactiveIcon from "@mui/icons-material/AirplanemodeInactive";
 export default function App() {
   return (
-    <Container sx={{ border: 2, boxShadow: 3, pb: 3 }}>
-      <Typography color="primary">HOAL</Typography>
-      <Button variant="contained" color="error">
-        {" "}
-        error
-      </Button>
-      <Button
-        variant="contained"
-        color="success"
-        startIcon={<AirplanemodeInactiveIcon />}
-      >
-        {" "}
-        success
-      </Button>
-      <Box sx={{ p: 5 }}>BOX</Box>
-      <Box
-        sx={{
-          p: 5,
-          border: 2,
-          borderColor: "peru",
-          bgcolor: "#111",
-          color: "white",
-        }}
-        component={"span"}
-      >
-        BOX compoent span renderizado
-      </Box>
+    <Container>
+      <Grid container>
+        {/* coja 6 columnas de las 12 por defecto*/}
+        {/* este parrafo solo cojera 6 columnas de las 12 disponible */}
+        <Grid item xs={12} sm={6} md={4}>
+          <p>
+            Mollit aliqua eu laborum consectetur dolor Lorem ullamco pariatur
+            sint anim incididunt. Do commodo incididunt voluptate mollit aute
+            est et ad eiusmod reprehenderit. Laboris excepteur irure aliquip
+            deserunt sint deserunt amet. Ad magna aliqua officia excepteur
+            veniam elit adipisicing minim deserunt culpa nisi. Proident ut non
+            duis consequat ea velit cupidatat minim. Occaecat eu est labore
+            laboris fugiat ipsum aliquip minim cillum pariatur reprehenderit
+            elit tempor nulla. Incididunt ex officia do labore exercitation
+            occaecat nulla sit aute laboris.
+          </p>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <p>
+            Mollit aliqua eu laborum consectetur dolor Lorem ullamco pariatur
+            sint anim incididunt. Do commodo incididunt voluptate mollit aute
+            est et ad eiusmod reprehenderit. Laboris excepteur irure aliquip
+            deserunt sint deserunt amet. Ad magna aliqua officia excepteur
+            veniam elit adipisicing minim deserunt culpa nisi. Proident ut non
+            duis consequat ea velit cupidatat minim. Occaecat eu est labore
+            laboris fugiat ipsum aliquip minim cillum pariatur reprehenderit
+            elit tempor nulla. Incididunt ex officia do labore exercitation
+            occaecat nulla sit aute laboris.
+          </p>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
